@@ -33,15 +33,22 @@ export const ItemList = styled.li`
 
   a {
     cursor: pointer;
-    &:hover::after {
-      width: 100%;
-      border-bottom: 0.2rem solid #986dff;
+
+    &:hover {
+      color: #986dff;
+      &::after {
+        width: 100%;
+        height: 0.4rem;
+      }
     }
 
     &::after {
-      transition: border-bottom 0.3s ease-in-out;
+      transition: width 0.5s ease-in-out;
       content: "";
       display: block;
+      width: 0%;
+      height: 0.2rem;
+      background-color: #986dff;
     }
   }
 `;

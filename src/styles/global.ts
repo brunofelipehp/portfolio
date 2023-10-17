@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
 body{
   font-size: 1.6rem;
   background: #111111;
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 
 a {
