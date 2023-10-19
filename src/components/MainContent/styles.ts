@@ -25,7 +25,7 @@ export const Title = styled.h1`
 export const TitleSection = styled.h2`
   font-size: 7rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 `;
 
 export const FitTitle = styled.p`
@@ -91,27 +91,46 @@ export const TextAbout = styled.div`
 
 export const ProjectSection = styled.section``;
 
+export const ProjectContainer = styled.section`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10rem;
+`;
+
 export const Project = styled.div`
+  width: 37rem;
+  height: 25rem;
   display: grid;
   place-content: center;
   text-align: center;
-  gap: 1rem;
-  width: 35rem;
-  height: 25rem;
-  padding: 8rem;
+  gap: 2rem;
   border-radius: 0.8rem;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
 
-  background-color: #151515;
+  &:hover {
+    transform: scale(1.5);
+  }
 `;
 
 export const ProjectTitle = styled.p`
   font-size: 1.7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  z-index: 1;
 `;
 
 export const ProjectImg = styled.img`
-  width: 30rem;
-  height: 15rem;
+  max-width: 100%;
+  height: 100%;
+  opacity: 0.5;
   border-radius: 0.8rem;
+  border-bottom: 0.3rem solid #986dff;
+  animation-delay: 0.3s;
+  display: block;
 `;
 
 export const LinksProject = styled.div`
@@ -121,6 +140,7 @@ export const LinksProject = styled.div`
 `;
 
 export const LinkProject = styled.a`
+  width: 12rem;
   background-color: #986dff;
   padding: 0.8rem;
   border-radius: 1.6rem;

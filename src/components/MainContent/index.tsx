@@ -10,6 +10,7 @@ import {
   Photo,
   PhotoAbout,
   Project,
+  ProjectContainer,
   ProjectImg,
   ProjectSection,
   ProjectTitle,
@@ -20,7 +21,7 @@ import {
 
 import profilePhoto from "../../assets/profile.jpg";
 import aboutPhoto from "../../assets/Pro.png";
-import projectPhoto from "../../assets/Programmer.jpg";
+import projectPhoto from "../../assets/project.png";
 
 export function MainContent() {
   return (
@@ -65,14 +66,37 @@ export function MainContent() {
       <ProjectSection>
         <TitleSection>Projetos</TitleSection>
 
-        <Project>
-          <ProjectImg src={projectPhoto} alt="" />
-          <ProjectTitle>Tela de cadastro</ProjectTitle>
-          <LinksProject>
-            <LinkProject href="">GitHub</LinkProject>
-            <LinkProject href="">Projeto</LinkProject>
-          </LinksProject>
-        </Project>
+        <ProjectContainer>
+          <Project>
+            <ProjectImg src={projectPhoto} alt="" />
+            <ProjectTitle>Upload.AI</ProjectTitle>
+          </Project>
+
+          <Project>
+            <ProjectImg src={projectPhoto} alt="" />
+            <ProjectTitle>Upload.AI</ProjectTitle>
+          </Project>
+
+          <Project>
+            <ProjectImg src={projectPhoto} alt="" />
+            <ProjectTitle>Upload.AI</ProjectTitle>
+          </Project>
+
+          <Project>
+            <ProjectImg src={projectPhoto} alt="" />
+            <ProjectTitle>Upload.AI</ProjectTitle>
+          </Project>
+
+          <Project>
+            <ProjectImg src={projectPhoto} alt="" />
+            <ProjectTitle>Upload.AI</ProjectTitle>
+          </Project>
+
+          <Project>
+            <ProjectImg src={projectPhoto} alt="" />
+            <ProjectTitle>Upload.AI</ProjectTitle>
+          </Project>
+        </ProjectContainer>
       </ProjectSection>
 
       <section>
