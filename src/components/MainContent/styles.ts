@@ -167,14 +167,15 @@ export const TechSection = styled.section`
 export const TechContainer = styled.div`
   display: flex;
   justify-content: center;
-  gap: 20rem;
+  gap: 10rem;
 `;
 
 export const Techs = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 40rem;
+  justify-content: center;
+  max-width: 50rem;
+  gap: 2rem;
 `;
 
 export const Tech = styled.div`
@@ -190,4 +191,10 @@ export const Tech = styled.div`
   &:hover {
     border: 0.1rem solid #986dff;
   }
+`;
+
+export const TechImg = styled.img`
+  width: 50rem;
+  height: 40rem;
+  border-radius: 0.8rem;
 `;

@@ -14,6 +14,7 @@ import {
   ProjectTitle,
   Tech,
   TechContainer,
+  TechImg,
   TechSection,
   Techs,
   TextAbout,
@@ -32,7 +33,7 @@ import { FaHtml5, FaGithub, FaCss3 } from "react-icons/fa";
 import profilePhoto from "../../assets/profile.jpg";
 import aboutPhoto from "../../assets/Pro.png";
 import projectPhoto from "../../assets/project.png";
-import techPhoto from "../../assets/about.png";
+import techPhoto from "../../assets/Progrs2.png";
 
 export function MainContent() {
   return (
@@ -114,7 +115,6 @@ export function MainContent() {
         <TitleSection>Tecnologias</TitleSection>
 
         <TechContainer>
-          <ProjectImg src={techPhoto} alt="" />
           <Techs>
             <Tech>
               <FaHtml5 size="6rem" color="#986dff" />
@@ -144,6 +144,7 @@ export function MainContent() {
               <FaGithub size="6rem" color="#986dff" />
             </Tech>
           </Techs>
+          <TechImg src={techPhoto} alt="" />
         </TechContainer>
       </TechSection>
     </Main>
