@@ -4,8 +4,6 @@ import {
   ButtonProfile,
   FitTitle,
   HomeSection,
-  LinkProject,
-  LinksProject,
   Main,
   Photo,
   PhotoAbout,
@@ -14,14 +12,27 @@ import {
   ProjectImg,
   ProjectSection,
   ProjectTitle,
+  Tech,
+  TechContainer,
+  TechSection,
+  Techs,
   TextAbout,
   Title,
   TitleSection,
 } from "./styles";
 
+import {
+  SiJavascript,
+  SiTypescript,
+  SiStyledcomponents,
+  SiReact,
+} from "react-icons/si";
+import { FaHtml5, FaGithub, FaCss3 } from "react-icons/fa";
+
 import profilePhoto from "../../assets/profile.jpg";
 import aboutPhoto from "../../assets/Pro.png";
 import projectPhoto from "../../assets/project.png";
+import techPhoto from "../../assets/about.png";
 
 export function MainContent() {
   return (
@@ -99,9 +110,42 @@ export function MainContent() {
         </ProjectContainer>
       </ProjectSection>
 
-      <section>
+      <TechSection>
         <TitleSection>Tecnologias</TitleSection>
-      </section>
+
+        <TechContainer>
+          <ProjectImg src={techPhoto} alt="" />
+          <Techs>
+            <Tech>
+              <FaHtml5 size="6rem" color="#986dff" />
+            </Tech>
+
+            <Tech>
+              <FaCss3 size="6rem" color="#986dff" />
+            </Tech>
+
+            <Tech>
+              <SiJavascript size="6rem" color="#986dff" />
+            </Tech>
+
+            <Tech>
+              <SiTypescript size="6rem" color="#986dff" />
+            </Tech>
+
+            <Tech>
+              <SiReact size="6rem" color="#986dff" />
+            </Tech>
+
+            <Tech>
+              <SiStyledcomponents size="6rem" color="#986dff" />
+            </Tech>
+
+            <Tech>
+              <FaGithub size="6rem" color="#986dff" />
+            </Tech>
+          </Techs>
+        </TechContainer>
+      </TechSection>
     </Main>
   );
 }

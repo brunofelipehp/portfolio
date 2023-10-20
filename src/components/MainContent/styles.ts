@@ -91,7 +91,7 @@ export const TextAbout = styled.div`
 
 export const ProjectSection = styled.section``;
 
-export const ProjectContainer = styled.section`
+export const ProjectContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10rem;
@@ -103,13 +103,29 @@ export const Project = styled.div`
   display: grid;
   place-content: center;
   text-align: center;
-  gap: 2rem;
+
   border-radius: 0.8rem;
   position: relative;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
     transform: scale(1.5);
+    cursor: pointer;
+
+    &::after {
+      width: 100%;
+      height: 0.2rem;
+    }
+  }
+
+  &::after {
+    transition: width 0.9s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    content: "";
+    display: block;
+    width: 0%;
+    height: 0.2rem;
+    background-color: #986dff;
+    border-radius: 0.8rem;
   }
 `;
 
@@ -120,7 +136,6 @@ export const ProjectTitle = styled.p`
   left: 50%;
   transform: translate(-50%, -50%);
   display: inline-block;
-  z-index: 1;
 `;
 
 export const ProjectImg = styled.img`
@@ -128,7 +143,6 @@ export const ProjectImg = styled.img`
   height: 100%;
   opacity: 0.5;
   border-radius: 0.8rem;
-  border-bottom: 0.3rem solid #986dff;
   animation-delay: 0.3s;
   display: block;
 `;
@@ -144,4 +158,36 @@ export const LinkProject = styled.a`
   background-color: #986dff;
   padding: 0.8rem;
   border-radius: 1.6rem;
+`;
+
+export const TechSection = styled.section`
+  margin-bottom: 20rem;
+`;
+
+export const TechContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+`;
+
+export const Techs = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 40rem;
+`;
+
+export const Tech = styled.div`
+  display: grid;
+  place-content: center;
+  width: 12.3rem;
+  height: 13rem;
+  background-color: #151515;
+  border-radius: 0.8rem;
+  transition: hover 0.3s ease-in-out;
+  margin-bottom: 2rem;
+
+  &:hover {
+    border: 0.1rem solid #986dff;
+  }
 `;
