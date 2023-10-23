@@ -12,28 +12,16 @@ import {
   ProjectImg,
   ProjectSection,
   ProjectTitle,
-  Tech,
-  TechContainer,
-  TechImg,
   TechSection,
-  Techs,
   TextAbout,
   Title,
   TitleSection,
 } from "./styles";
 
-import {
-  SiJavascript,
-  SiTypescript,
-  SiStyledcomponents,
-  SiReact,
-} from "react-icons/si";
-import { FaHtml5, FaGithub, FaCss3 } from "react-icons/fa";
-
 import profilePhoto from "../../assets/profile.jpg";
 import aboutPhoto from "../../assets/Pro.png";
 import projectPhoto from "../../assets/project.png";
-import techPhoto from "../../assets/Progrs2.png";
+import { Technologies } from "../Technologies";
 
 export function MainContent() {
   return (
@@ -112,40 +100,7 @@ export function MainContent() {
       </ProjectSection>
 
       <TechSection>
-        <TitleSection>Tecnologias</TitleSection>
-
-        <TechContainer>
-          <Techs>
-            <Tech>
-              <FaHtml5 size="6rem" color="#986dff" />
-            </Tech>
-
-            <Tech>
-              <FaCss3 size="6rem" color="#986dff" />
-            </Tech>
-
-            <Tech>
-              <SiJavascript size="6rem" color="#986dff" />
-            </Tech>
-
-            <Tech>
-              <SiTypescript size="6rem" color="#986dff" />
-            </Tech>
-
-            <Tech>
-              <SiReact size="6rem" color="#986dff" />
-            </Tech>
-
-            <Tech>
-              <SiStyledcomponents size="6rem" color="#986dff" />
-            </Tech>
-
-            <Tech>
-              <FaGithub size="6rem" color="#986dff" />
-            </Tech>
-          </Techs>
-          <TechImg src={techPhoto} alt="" />
-        </TechContainer>
+        <Technologies />
       </TechSection>
     </Main>
   );
