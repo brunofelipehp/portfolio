@@ -48,6 +48,13 @@ export const TechContent = styled.div`
   text-align: center;
 `;
 
-export const TechTitle = styled.h3``;
+export const TechTitle = styled.h3`
+  font-size: 3rem;
+  font-weight: 700;
+  transition: all 0.3s ease-in;
+`;
 
-export const TechText = styled.p``;
+export const TechText = styled.p`
+  opacity: 0.7;
+  transition: all 0.3s ease-in;
+`;
