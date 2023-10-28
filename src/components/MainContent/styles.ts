@@ -38,17 +38,20 @@ export const ButtonProfile = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 16rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 20rem;
   height: 5rem;
   padding: 1.6rem;
   border: none;
   border-radius: 0.5rem;
-  font-weight: 700;
-
+  font-weight: 500;
+  font-size: 1.6rem;
   background-color: #986dff;
   color: #ffffff;
   transition: all 0.3s ease-in-out;
+
+  cursor: pointer;
 
   &:hover {
     opacity: 0.8;
@@ -71,16 +74,17 @@ export const About = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 8rem;
   background-color: #151515;
   width: 100%;
   height: 70rem;
+  padding: 5rem;
   border-radius: 0.8rem;
 `;
 
 export const PhotoAbout = styled.img`
-  height: 50rem;
-  width: 60rem;
+  height: 40rem;
+  width: 50rem;
   border-radius: 0.8rem;
 `;
 

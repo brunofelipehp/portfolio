@@ -22,6 +22,7 @@ import profilePhoto from "../../assets/profile.jpg";
 import aboutPhoto from "../../assets/Pro.png";
 import projectPhoto from "../../assets/project.png";
 import { Technologies } from "../Technologies";
+import { BsDownload } from "react-icons/bs";
 
 export function MainContent() {
   return (
@@ -33,7 +34,9 @@ export function MainContent() {
           </Title>
           <FitTitle>Desenvolvedor Front-end</FitTitle>
 
-          <ButtonProfile>Currículo</ButtonProfile>
+          <ButtonProfile>
+            Currículo <BsDownload size="1.6rem" color="#fff" />
+          </ButtonProfile>
         </div>
         <Photo src={profilePhoto} alt="profile" />
       </HomeSection>
