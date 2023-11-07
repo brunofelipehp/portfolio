@@ -4,6 +4,7 @@ import {
   ButtonProfile,
   FitTitle,
   HomeSection,
+  LinkProject,
   Main,
   Photo,
   PhotoAbout,
@@ -73,31 +74,39 @@ export function MainContent() {
           <Project>
             <ProjectImg src={projectPhoto} alt="" />
             <ProjectTitle>Upload.AI</ProjectTitle>
+            <LinkProject className="link" href="#">
+              veja mais
+            </LinkProject>
           </Project>
 
           <Project>
             <ProjectImg src={projectPhoto} alt="" />
             <ProjectTitle>Upload.AI</ProjectTitle>
+            <LinkProject className="link">veja mais</LinkProject>
           </Project>
 
           <Project>
             <ProjectImg src={projectPhoto} alt="" />
             <ProjectTitle>Upload.AI</ProjectTitle>
+            <LinkProject className="link">veja mais</LinkProject>
           </Project>
 
           <Project>
             <ProjectImg src={projectPhoto} alt="" />
             <ProjectTitle>Upload.AI</ProjectTitle>
+            <LinkProject className="link">veja mais</LinkProject>
           </Project>
 
           <Project>
             <ProjectImg src={projectPhoto} alt="" />
             <ProjectTitle>Upload.AI</ProjectTitle>
+            <LinkProject className="link">veja mais</LinkProject>
           </Project>
 
           <Project>
             <ProjectImg src={projectPhoto} alt="" />
             <ProjectTitle>Upload.AI</ProjectTitle>
+            <LinkProject className="link">veja mais</LinkProject>
           </Project>
         </ProjectContainer>
       </ProjectSection>

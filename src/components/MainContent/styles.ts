@@ -114,11 +114,14 @@ export const Project = styled.div`
 
   &:hover {
     transform: scale(1.5);
-    cursor: pointer;
 
     &::after {
       width: 100%;
       height: 0.2rem;
+    }
+
+    .link {
+      opacity: 1;
     }
   }
 
@@ -158,10 +161,18 @@ export const LinksProject = styled.div`
 `;
 
 export const LinkProject = styled.a`
-  width: 12rem;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8rem;
+  font-size: 1rem;
   background-color: #986dff;
-  padding: 0.8rem;
+  padding: 0.1rem;
   border-radius: 1.6rem;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
 `;
 
 export const TechSection = styled.section`
