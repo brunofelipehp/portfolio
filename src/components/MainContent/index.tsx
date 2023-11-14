@@ -1,18 +1,15 @@
+import { Projects } from "../Projects";
+
 import {
   About,
   AboutSection,
   ButtonProfile,
   FitTitle,
   HomeSection,
-  LinkProject,
   Main,
   Photo,
   PhotoAbout,
-  Project,
-  ProjectContainer,
-  ProjectImg,
   ProjectSection,
-  ProjectTitle,
   TechSection,
   TextAbout,
   Title,
@@ -21,7 +18,7 @@ import {
 
 import profilePhoto from "../../assets/profile.jpg";
 import aboutPhoto from "../../assets/Pro.png";
-import projectPhoto from "../../assets/project.png";
+
 import { Technologies } from "../Technologies";
 import { BsDownload } from "react-icons/bs";
 
@@ -70,45 +67,7 @@ export function MainContent() {
       <ProjectSection>
         <TitleSection>Projetos</TitleSection>
 
-        <ProjectContainer>
-          <Project>
-            <ProjectImg src={projectPhoto} alt="" />
-            <ProjectTitle>Upload.AI</ProjectTitle>
-            <LinkProject className="link" href="#">
-              veja mais
-            </LinkProject>
-          </Project>
-
-          <Project>
-            <ProjectImg src={projectPhoto} alt="" />
-            <ProjectTitle>Upload.AI</ProjectTitle>
-            <LinkProject className="link">veja mais</LinkProject>
-          </Project>
-
-          <Project>
-            <ProjectImg src={projectPhoto} alt="" />
-            <ProjectTitle>Upload.AI</ProjectTitle>
-            <LinkProject className="link">veja mais</LinkProject>
-          </Project>
-
-          <Project>
-            <ProjectImg src={projectPhoto} alt="" />
-            <ProjectTitle>Upload.AI</ProjectTitle>
-            <LinkProject className="link">veja mais</LinkProject>
-          </Project>
-
-          <Project>
-            <ProjectImg src={projectPhoto} alt="" />
-            <ProjectTitle>Upload.AI</ProjectTitle>
-            <LinkProject className="link">veja mais</LinkProject>
-          </Project>
-
-          <Project>
-            <ProjectImg src={projectPhoto} alt="" />
-            <ProjectTitle>Upload.AI</ProjectTitle>
-            <LinkProject className="link">veja mais</LinkProject>
-          </Project>
-        </ProjectContainer>
+        <Projects />
       </ProjectSection>
 
       <TechSection>
