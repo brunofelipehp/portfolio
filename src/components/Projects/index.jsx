@@ -6,8 +6,6 @@ import {
   ProjectTitle,
 } from "./styles";
 
-import test from "../../assets/project-watch.jpeg";
-
 import { projectData } from "../../utils/projects";
 
 export const Projects = () => {
@@ -16,7 +14,7 @@ export const Projects = () => {
       <ProjectContainer>
         {projectData.map((project) => (
           <Project key={project.id}>
-            <ProjectImg src={test} alt="" />
+            <ProjectImg src={project.url} alt="" />
             <ProjectTitle>{project.title}</ProjectTitle>
             <LinkProject className="link" href={project.link}>
               veja mais
